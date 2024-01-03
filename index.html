@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Beat Maker</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<div class="sequencer">
+		<!---------------------------------- kick class ----------------->
+		<div class="kick-track">
+			<div class="controls">
+				<h1>Kick</h1>
+				<button data-track="0" class="mute kick-volume">
+					<i class="fa-solid fa-volume-xmark"></i>
+				</button>
+				<select name="kick-select" id="kick">
+					<option value="./">Classic kick</option>
+					<option value="./">828 kick</option>
+					<option value="./">Classic kick</option>
+				</select>
+			</div>
+			<div class="kick">
+				<div class="pad kick-pad b-0"></div>
+				<div class="pad kick-pad b-1"></div>
+				<div class="pad kick-pad b-2"></div>
+				<div class="pad kick-pad b-3"></div>
+				<div class="pad kick-pad b-4"></div>
+				<div class="pad kick-pad b-5"></div>
+				<div class="pad kick-pad b-6"></div>
+				<div class="pad kick-pad b-7"></div>
+			</div>
+		</div>
+
+		<!---------------------------------- Snare class ----------------->
+		<div class="snare-track">
+			<div class="controls">
+				<h1>Snare</h1>
+				<button data-track="1" class="mute snare-volume">
+					<i class="fa-solid fa-volume-xmark"></i>
+				</button>
+				<select name="snare-select" id="snare">
+					<option value="./">Classic kick</option>
+					<option value="./">828 kick</option>
+					<option value="./">Classic kick</option>
+				</select>
+			</div>
+			<div class="snare">
+				<div class="pad snare-pad b-0"></div>
+				<div class="pad snare-pad b-1"></div>
+				<div class="pad snare-pad b-2"></div>
+				<div class="pad snare-pad b-3"></div>
+				<div class="pad snare-pad b-4"></div>
+				<div class="pad snare-pad b-5"></div>
+				<div class="pad snare-pad b-6"></div>
+				<div class="pad snare-pad b-7"></div>
+			</div>
+		</div>
+
+		<!---------------------------------- hihat class ----------------->
+		<div class="hihat-track">
+			<div class="controls">
+				<h1>Hihat</h1>
+				<button data-track="2" class="mute hihat-volume">
+					<i class="fa-solid fa-volume-xmark"></i>
+				</button>
+				<select name="hihat-select" id="hihat">
+					<option value="./">Classic kick</option>
+					<option value="./">828 kick</option>
+					<option value="./">Classic kick</option>
+				</select>
+			</div>
+			<div class="hihat">
+				<div class="pad hihat-pad b-0"></div>
+				<div class="pad hihat-pad b-1"></div>
+				<div class="pad hihat-pad b-2"></div>
+				<div class="pad hihat-pad b-3"></div>
+				<div class="pad hihat-pad b-4"></div>
+				<div class="pad hihat-pad b-5"></div>
+				<div class="pad hihat-pad b-6"></div>
+				<div class="pad hihat-pad b-7"></div>
+			</div>
+		</div>
+		<button class="play">Play</button>
+	</div>
+
+
+	<audio class="kick-sound" src="sounds/first.mp3"></audio>
+	<audio class="snare-sound" src="sounds/second.mp3"></audio>
+	<audio class="hihat-sound" src="sounds/third.mp3"></audio>
+
+
+
+	<script type="text/javascript" src="app.js"></script>
+	<script src="https://kit.fontawesome.com/155ab0ea1b.js"></script>
+</body>
+</html>
