@@ -17,9 +17,9 @@
 					<i class="fa-solid fa-volume-xmark"></i>
 				</button>
 				<select name="kick-select" id="kick">
-					<option value="first.mp3">Classic kick</option>
-					<option value="first.mp3">828 kick</option>
-					<option value="first.mp3">Classic kick</option>
+					<option value="sounds/first.mp3">Classic kick</option>
+					<option value="sounds/first.mp3">828 kick</option>
+					<option value="sounds/first.mp3">Classic kick</option>
 				</select>
 			</div>
 			<div class="kick">
@@ -42,9 +42,9 @@
 					<i class="fa-solid fa-volume-xmark"></i>
 				</button>
 				<select name="snare-select" id="snare">
-					<option value="second.mp3">Classic kick</option>
-					<option value="second.mp3">828 kick</option>
-					<option value="second.mp3">Classic kick</option>
+					<option value="sounds/second.mp3">Classic kick</option>
+					<option value="sounds/second.mp3">828 kick</option>
+					<option value="sounds/second.mp3">Classic kick</option>
 				</select>
 			</div>
 			<div class="snare">
@@ -67,9 +67,9 @@
 					<i class="fa-solid fa-volume-xmark"></i>
 				</button>
 				<select name="hihat-select" id="hihat">
-					<option value="third.mp3">Classic kick</option>
-					<option value="third.mp3">828 kick</option>
-					<option value="third.mp3">Classic kick</option>
+					<option value="sounds/third.mp3">Classic kick</option>
+					<option value="sounds/third.mp3">828 kick</option>
+					<option value="sounds/third.mp3">Classic kick</option>
 				</select>
 			</div>
 			<div class="hihat">
@@ -84,12 +84,16 @@
 			</div>
 		</div>
 		<button class="play">Play</button>
+		<div class="tempo">
+			<input type="range" class="tempo-slider" max="300" min="20" value="100" name="">
+			<p>Tempo: <span class="tempo-nr">100</span></p>
+		</div>
 	</div>
 
 
-	<audio class="kick-sound" src="first.mp3"></audio>
-	<audio class="snare-sound" src="second.mp3"></audio>
-	<audio class="hihat-sound" src="third.mp3"></audio>
+	<audio class="kick-sound" src="sounds/first.mp3"></audio>
+	<audio class="snare-sound" src="sounds/second.mp3"></audio>
+	<audio class="hihat-sound" src="sounds/third.mp3"></audio>
 
 
 
